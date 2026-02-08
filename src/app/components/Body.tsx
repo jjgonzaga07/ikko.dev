@@ -159,7 +159,8 @@ export default function Body() {
           className="flex flex-col items-center gap-4 sm:gap-6 md:flex-row md:gap-10"
         >
           <a
-            href="#"
+            href="/RESUME_GONZAGA_JERICHOJAMES_F.pdf"
+            download
             className="px-6 sm:px-8 py-2 sm:py-3 bg-[#FFF1B5] border-2 border-[#43302E] text-[#43302E] text-lg sm:text-xl md:text-2xl rounded-full hover:bg-[#43302E] hover:text-[#FFF1B5] transition-all"
           >
             download resume
