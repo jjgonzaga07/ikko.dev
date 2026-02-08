@@ -63,11 +63,14 @@ export default function Body() {
   const handleFlip = () => {
     if (!isFlipped) {
       // Animate the coin flip with GSAP
-      gsap.to(coinRef.current?.querySelector('.coin-inner'), {
-        rotateY: 180,
-        duration: 0.7,
-        ease: "power2.inOut"
-      });
+      const coinInner = coinRef.current?.querySelector('.coin-inner');
+      if (coinInner) {
+        gsap.to(coinInner, {
+          rotateY: 180,
+          duration: 0.7,
+          ease: "power2.inOut"
+        });
+      }
       setIsFlipped(true);
     }
   };
